@@ -1,18 +1,17 @@
 package org.learning.patterns;
-/*
-
-for size = 5
-A
-AB
-ABC
-ABCD
-ABCDE
-
-*/
 
 import java.util.Scanner;
 
-public class Pattern14 {
+/*
+
+for size = 5
+E
+DE
+CDE
+BCDE
+ABCDE
+*/
+public class Pattern18 {
 
     public static void main(String[] args) {
         int size = 0;
@@ -26,12 +25,15 @@ public class Pattern14 {
     }
 
     private static void printPattern(int size) {
+        char c = (char) ('A' + size - 1);
         for (int i = 1; i <= size; i++) {
-            char c = 'A';
-            for (int j = 1; j <= i; j++, c++) {
-                System.out.print(c);
+            for (int j = 1; j <= i; j++) {
+                System.out.print((char) (c + j - 1));
             }
+            c--;
             System.out.println();
         }
+
     }
+
 }

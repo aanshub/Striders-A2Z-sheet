@@ -27,8 +27,8 @@ public class Pattern15 {
 
     private static void printPattern(int size) {
 
-        for(int i =size ; i >=1; i--){
-            for(char c = 'A'; c <= 'A' + i - 1 ; c++) {
+        for (int i = size; i >= 1; i--) {
+            for (char c = 'A'; c <= 'A' + i - 1; c++) {
                 System.out.print(c);
             }
             System.out.println();

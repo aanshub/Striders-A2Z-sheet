@@ -30,8 +30,8 @@ public class Pattern13 {
 
     private static void printPattern(int size) {
         int counter = 1;
-        for(int i = 1; i<= size; i++) {
-            for(int j = 1; j<=i; j++,counter++) {
+        for (int i = 1; i <= size; i++) {
+            for (int j = 1; j <= i; j++, counter++) {
                 System.out.print(counter + " ");
             }
             System.out.println();
