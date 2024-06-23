@@ -9,7 +9,6 @@ for n = 3
 
 */
 
-import java.io.IOException;
 import java.util.Scanner;
 
 public class Pattern1 {
